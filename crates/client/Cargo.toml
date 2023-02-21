@@ -1,0 +1,12 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { workspace = true, features = ["rt", "rt-multi-thread"] }
+tonic.workspace = true
+
+api = { path = "../api" }
+async-trait = "0.1.57"
+tokio-stream = "0.1.11"
